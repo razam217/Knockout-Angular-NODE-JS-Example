@@ -1,0 +1,96 @@
+   .ko-form {
+    width: auto;
+    float: left;
+   /* margin-left: auto;
+    margin-right: auto;*/
+    margin: 20px;
+    border: 2px solid #ccc;
+    padding: 30px;
+   }
+
+   .detail_table {
+    border-top: 2px solid #ccc;
+   }
+   .detail_table tr td {
+    width: 130px;
+    padding: 5px;
+   }
+   .detail_table tr td:first-child {
+    background-color: #f1f1f1;
+   }
+   .detail_table tr td:nth-child(2) {
+    background-color: #F9F9F9;
+   }
+
+   .ko-detail {
+    width: auto;
+    float:left;
+    padding: 10px;
+    margin: 20px;
+   }
+
+   .ko-detail h3 {
+    margin: 5px auto;
+    text-align: center;
+   }
+
+   .title_field {
+    min-width: 120px;
+   }
+
+   .ko-list {
+    float:left;
+    display: inline-block;
+    width: 99%;
+    padding: 5px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+   }
+   .ko-input-des {
+    color: #888;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding: 5px;
+    width: 200px;
+    font-weight: bold;
+   }
+
+   div.card-user {
+    box-shadow: 2px 3px 0 #888888;
+    float: left;
+    min-width: 200px;
+    width: auto;
+    padding: 13px;
+    background: #fff;
+    margin: 10px 10px 10px 10px;
+   }
+
+   .card-user span.name {
+    font-size: 21px;
+    font-weight: 700;
+    color:#418fbf;
+    cursor: pointer;
+   }
+
+   .card-user span.other {
+    font-size: 12px;
+    color: #8dc63f;
+   }
+
+   .delete_user {
+    position: absolute;
+    margin: -25px;
+    color: #FFF;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 0px 6px 0px 6px;
+    text-decoration: none;
+    background: none repeat scroll 0% 0% #BF5F5F;
+    box-shadow: 1px 1px 0px #888;
+    font-size: 12px;
+   }

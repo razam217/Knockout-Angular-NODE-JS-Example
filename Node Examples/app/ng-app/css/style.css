@@ -1,0 +1,7 @@
+body { padding-bottom: 70px; }
+
+.top_menu { background-color:#D8F781;}
+
+.active { background-color:#D8F781; border-bottom: 3px solid red;}
+
+.menu_butt { color: red;}

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AngularJS Basic Structure</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/simple-sidebar.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/angular-chart.css" />
+    
+</head>
+<body ng-app="mainApp">
+
+
+
+
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#/">
+                        Home
+                    </a>
+                </li>
+                <li class="{{homeTab}}"><a href="#/summary">Executive Summary</a></li>
+                <li class="{{aboutTab}}"><a href="#/globalDataAnalysis">Global Data Analysis</a></li>
+                <li class="{{contactTab}}"><a href="#/malwareAttacks">Malware Attacks</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+        	<!--<div class="header">
+            	<a href="" class="btn btn-default" id="menu-toggle"><i class="fa fa-list"></i></a>
+            </div>-->
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div ng-view="">
+                    
+                	</div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+
+    
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>	
+    
+    <script type="text/javascript" src="js/vendor/chart.js"></script>
+    <script type="text/javascript" src="js/vendor/angular-chart.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+    <script type="text/javascript" src="js/directives/directive.js"></script>
+    <script type="text/javascript" src="js/filters/filter.js"></script>
+    <script type="text/javascript" src="js/controllers/controller.js"></script>
+    <script type="text/javascript" src="js/services/service.js"></script>
+    
+</body>
+</html>

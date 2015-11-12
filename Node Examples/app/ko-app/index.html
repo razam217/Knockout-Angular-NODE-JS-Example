@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+   <title>KnockoutJS Simple Example</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.2.0.js" type="text/javascript"></script>
+   <script src="script.js" type="text/javascript"></script>
+
+   <style>
+
+   </style>
+</head>
+
+<body>
+
+  
+   
+  <div class="ko-form">
+    <form role="form" data-bind="submit: createUser">
+
+      First Name * <br /><input type="text" class="ko-input-des" data-bind="textInput: firstName" required="required"> <br />
+      Last Name <br /><input type="text"  class="ko-input-des" data-bind="textInput: lastName"> <br />
+      Gender <br />
+      <select class="ko-input-des" style="width:215px;" data-bind="textInput: gender, options: genderArray, optionsText: $data, optionsValue: $data, optionsCaption: 'Choose...'">
+      </select><br />
+      Father Name <br /><input type="text"  class="ko-input-des" data-bind="textInput: father_name"> <br />
+      Age (Years) <br /><input type="number" class="ko-input-des" data-bind="textInput: age" /> <br />
+      Marital Status <br />
+      <select class="ko-input-des" style="width:215px;" data-bind="textInput: marital_status">
+        <option value="">Choose...</option>
+        <option value="Married">Married</option>
+        <option value="Single">Single</option>
+      </select><br />
+
+      <button style="margin-top: 5px; width: 215px; background-color: #418fbf; padding: 10px; color:#fff; border: none; border-radius: 5px;" type="submit">Save User</button>
+      <span data-bind="visible: wait">Please wait...</span>
+    </form>
+  </div>
+
+  <div data-bind="with : userDetail">
+    <div class="ko-detail">
+      <h3>User Details</h3>
+      <table class="detail_table">
+        <!-- <caption>User Details</caption> -->
+        <tr>
+          <td>Name</td>
+          <td data-bind="text: name.firstName + ' ' + name.lastName"></td>
+        </tr>
+        <tr>
+          <td>Father Name</td>
+          <td data-bind="text: father_name"></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td data-bind="text: age"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td data-bind="text: gender"></td>
+        </tr>
+        <tr>
+          <td>Marital Status</td>
+          <td data-bind="text: marital_status"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+
+  <div class="ko-list" data-bind="visible: sortedInstances().length > 0, foreach: sortedInstances">
+
+    <div class="card-user">
+      <a href="#" class="delete_user" data-bind="click: deleteUser">Delete</a>
+      <span href="#" class="name" data-bind="text: name.firstName + ' ' + name.lastName, click: getDetail"></span><br/>
+      <span class="other" data-bind="text: gender"></span>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
