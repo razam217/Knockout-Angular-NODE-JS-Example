@@ -10,6 +10,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');		// call mongoose for MondoDB
 
+// Testing changes Commit Mechanism in GIT 222
+
 // configure app to use body-parser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({extended: true}));
