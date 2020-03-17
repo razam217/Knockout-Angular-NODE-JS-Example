@@ -1,4 +1,5 @@
 {
+  "author": "Mehdi Raza",
   "name": "node-api",
   "main": "server.js",
   "dependencies": {
